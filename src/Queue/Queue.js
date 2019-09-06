@@ -1,5 +1,5 @@
 const _Node = require('./Node');
-const { human_names, pet_names } = require('./names')
+const { human_names } = require('./names')
 
 class Queue {
   constructor() {
@@ -34,15 +34,15 @@ class Queue {
   }
 }
 
-function peek(list){
-  return list.first.data;
-}
-function isEmpty(list){
-  if(list.first){
-    return false;
-  }
-  return true;
-}
+// function peek(list){
+//   return list.first.data;
+// }
+// function isEmpty(list){
+//   if(list.first){
+//     return false;
+//   }
+//   return true;
+// }
 function display(list){
   let result = [];
   let curr = list.first;
@@ -53,4 +53,12 @@ function display(list){
   return result;
 }
 
-function adoptName()
+function adoptName(){
+  let names = new Queue();
+  let ranNum = Math.floor(Math.random()*5+1);
+  for(let i=0; i<=ranNum; i++){
+    names.enqueue(human_names[Math.floor(Math.random()*98+1)])
+  }
+  return names;
+}
+export { Queue, adoptName, display };
