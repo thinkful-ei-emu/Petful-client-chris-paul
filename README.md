@@ -13,7 +13,7 @@ Front End: React, HTML, CSS, Javascript
 Back End: NodeJs, Express
 
 # Screenshot
-![ScreenShot](https://github.com/thinkful-ei-emu/chris-capstone1-client/blob/master/screenshots/MB_Landing.png)
+![ScreenShot](https://github.com/thinkful-ei-emu/Petful-client-chris-paul/blob/master/src/images/screencapture-petfulbypaulnchris-chrisbizunit34-now-sh-2019-09-06-17_07_16.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
