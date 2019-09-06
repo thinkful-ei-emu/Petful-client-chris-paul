@@ -11,7 +11,6 @@ export default class App extends React.Component {
   render(){
   return (
     <div className="App">
-      <main className="MainSection">
         <Switch>
           <Route
             exact path={'/'}
@@ -34,7 +33,6 @@ export default class App extends React.Component {
             component={AddPetPage}
           />
         </Switch>
-      </main>
     </div>
   );
   }

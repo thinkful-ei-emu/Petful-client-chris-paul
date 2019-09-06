@@ -18,10 +18,6 @@ export default class LandingPage extends React.Component{
                             to our queue. Once we finish processing the paperwork, you'll receive
                             your new pet!
                         </p>
-
-                        <p>Help animals who have been lost or turned into local shelters, 
-                            or animals that have been surrendered by their owners due to 
-                            health, lifestyle and/or living arrangement changes.</p>
                         <Link to='/queue'>
                             <button>Adopt!</button>
                         </Link>

@@ -1,0 +1,10 @@
+html,body{ 
+  position:relative; 
+  height:auto; 
+  min-height:100vh !important; 
+  text-align: center;
+}
+
+img {
+  width: 200px
+}
