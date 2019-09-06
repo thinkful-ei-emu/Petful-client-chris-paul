@@ -4,6 +4,7 @@ import LandingPage from './LandingPage/LandingPage';
 // import Header from './Header/Header';
 import AdoptionPage from './AdoptionPage/AdoptionPage';
 import SuccessPage from './SuccessPage/SuccessPage';
+import AddPetPage from './AddPetPage/AddPetPage';
 import './App.css';
 
 export default class App extends React.Component {
@@ -24,6 +25,10 @@ export default class App extends React.Component {
           <Route
             path={'/success'}
             component={SuccessPage}
+          />
+          <Route
+            path={'/addAPet'}
+            component={AddPetPage}
           />
         </Switch>
       </main>
