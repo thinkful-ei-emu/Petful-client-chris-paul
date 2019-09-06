@@ -76,7 +76,7 @@ export default class QueuePage extends React.Component {
                             })
                             .catch(e => console.error(e));
                     })
-            } else if(num > 60){
+            } else if(num > 40){
                 console.log('dog')
                 PetsApiService.deleteDog()
                     .then(res => {
