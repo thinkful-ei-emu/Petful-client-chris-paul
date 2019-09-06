@@ -4,6 +4,7 @@ import LandingPage from './LandingPage/LandingPage';
 // import Header from './Header/Header';
 import AdoptionPage from './AdoptionPage/AdoptionPage';
 import SuccessPage from './SuccessPage/SuccessPage';
+import QueuePage from './QueuePage/QueuePage';
 import './App.css';
 
 export default class App extends React.Component {
@@ -16,6 +17,10 @@ export default class App extends React.Component {
           <Route
             exact path={'/'}
             component={LandingPage}
+          />
+          <Route
+          path={'/queue'}
+          component={QueuePage}
           />
           <Route
             path={'/adoption'}

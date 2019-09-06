@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PetsApiService from '../services/api-service';
 
 export default class AdoptionPage extends React.Component {
     state = {
@@ -7,33 +8,18 @@ export default class AdoptionPage extends React.Component {
         cat: {}
     }
     componentDidMount(){
-        this.getCat();
-        this.getDog();
-    }
-
-    getCat() {
-        return fetch('https://petful-chris-paul.herokuapp.com/api/cat')
-            .then(res =>
-                (!res.ok)
-                ? res.json().then(e => Promise.reject(e))
-                : res.json()
-            )
+        PetsApiService.getCat()
             .then(res => {
                 console.log(res)
                 this.setState({ cat: res })
             })
-            .catch(e => console.error(e))
-    }
-
-    getDog() {
-        return fetch('https://petful-chris-paul.herokuapp.com/api/dog')
-            .then(res =>
-                (!res.ok)
-                ? res.json().then(e => Promise.reject(e))
-                : res.json()
-            )
-            .then(res => this.setState({ dog: res }))
-            .catch(e => console.error(e))
+            .catch(e => console.error(e));
+        PetsApiService.getDog()
+            .then(res => {
+                console.log(res)
+                this.setState({ dog: res })
+            })
+            .catch(e => console.error(e));
     }
 
     handleAdoptCat(e){}

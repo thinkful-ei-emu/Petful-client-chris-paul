@@ -7,8 +7,8 @@ export default class LandingPage extends React.Component{
     render(){
         return (
             <section className='LandingPage'>
-                <div class="hero-image">
-                    <div class="hero-text">
+                <div className="hero-image">
+                    <div className="hero-text">
                         <h1>FIFO Adoption Agency</h1>
                         <p>Make A Difference – Adopt</p>
                         <p>Add yourself to the list of people making the great choice to
@@ -22,7 +22,7 @@ export default class LandingPage extends React.Component{
                         <p>Help animals who have been lost or turned into local shelters, 
                             or animals that have been surrendered by their owners due to 
                             health, lifestyle and/or living arrangement changes.</p>
-                        <Link to='/adoption'>
+                        <Link to='/queue'>
                             <button>Adopt!</button>
                         </Link>
                     </div>
