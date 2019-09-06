@@ -164,4 +164,4 @@ const pet_names = [
     'Shadow'
 ]
 
-module.exports = { human_names, pet_names };
+export { human_names, pet_names };

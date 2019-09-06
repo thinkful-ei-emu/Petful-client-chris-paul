@@ -5,4 +5,4 @@ class _Node {
   }
 }
 
-module.exports = _Node;
+export default _Node;

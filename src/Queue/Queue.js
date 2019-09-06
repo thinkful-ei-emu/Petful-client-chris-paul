@@ -1,5 +1,5 @@
-const _Node = require('./Node');
-const { human_names } = require('./names')
+import _Node from './Node';
+import { human_names } from './names'
 
 class Queue {
   constructor() {
