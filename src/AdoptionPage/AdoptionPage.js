@@ -36,9 +36,7 @@ export default class AdoptionPage extends React.Component {
             .catch(e => console.error(e))
     }
 
-    handleAdopt(){
-
-    }
+    handleAdoptCat(e){}
     
     render(){
         const { dog, cat } = this.state
@@ -63,7 +61,7 @@ export default class AdoptionPage extends React.Component {
                         <p>Age: {cat.age}</p>
                         <p>Gender: {cat.sex}</p>
                         <p>History: {cat.story}</p>
-                        <button>I Want a Cat!</button>
+                        <button onClick={e => this.handleAdoptCat(e)}>I Want a Cat!</button>
                     </div>
                 </section>
                 <div>
