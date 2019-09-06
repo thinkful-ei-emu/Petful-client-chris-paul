@@ -5,6 +5,7 @@ import LandingPage from './LandingPage/LandingPage';
 import AdoptionPage from './AdoptionPage/AdoptionPage';
 import SuccessPage from './SuccessPage/SuccessPage';
 import QueuePage from './QueuePage/QueuePage';
+import AddPetPage from './AddPetPage/AddPetPage';
 import './App.css';
 
 export default class App extends React.Component {
@@ -29,6 +30,10 @@ export default class App extends React.Component {
           <Route
             path={'/success'}
             component={SuccessPage}
+          />
+          <Route
+            path={'/addAPet'}
+            component={AddPetPage}
           />
         </Switch>
       </main>

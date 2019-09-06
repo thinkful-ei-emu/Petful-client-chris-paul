@@ -25,6 +25,11 @@ export default class LandingPage extends React.Component{
                         <Link to='/queue'>
                             <button>Adopt!</button>
                         </Link>
+                        <br/>
+                        <Link to='/addAPet'>
+                            <button>Add a Pet!</button>
+                        </Link>
+
                     </div>
                 </div>
             </section>

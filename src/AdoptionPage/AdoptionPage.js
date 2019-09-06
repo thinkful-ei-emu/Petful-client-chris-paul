@@ -37,7 +37,17 @@ export default class AdoptionPage extends React.Component {
                         <p>Age: {dog.age}</p>
                         <p>Gender: {dog.sex}</p>
                         <p>History: {dog.story}</p>
-                        <button>I Want a Dog!</button>
+                        {/* <button>I Want a Dog!</button> */}
+                        <Link to={{
+                            pathname:'/success',
+                            state: {
+                                ...this.state,
+                                choseDog:true,
+                                choseCat:false,
+                            }
+                        }}>
+                            <button>I want just the dog</button>
+                        </Link>
                     </div>
                     <div>
                         <h2>Adopt a Cat!</h2>
@@ -47,11 +57,33 @@ export default class AdoptionPage extends React.Component {
                         <p>Age: {cat.age}</p>
                         <p>Gender: {cat.sex}</p>
                         <p>History: {cat.story}</p>
-                        <button onClick={e => this.handleAdoptCat(e)}>I Want a Cat!</button>
+                        {/* <button onClick={e => this.handleAdoptCat(e)}>I Want a Cat!</button> */}
+                        <Link to={{
+                            pathname:'/success',
+                            state: {
+                                ...this.state,
+                                choseDog:false,
+                                choseCat:true,
+                            }
+                        }}>
+                            <button>I want just the cat</button>
+                        </Link>
+                        
                     </div>
                 </section>
                 <div>
-                    <button>I Want Both</button>
+                    {/* <button>I Want Both</button> */}
+                    <Link to={{
+                        pathname:'/success',
+                        state: {
+                            ...this.state,
+                            choseDog:true,
+                            choseCat:true,
+                        }
+                    }}>
+                        <button>I want both</button>
+                    </Link>
+                    <br/>
                     <Link to='/'><button>Back of the Line, Please...(Something Else)</button></Link>
                 </div>
             </>
